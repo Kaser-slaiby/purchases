@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProducatsComponent } from './components/producats/producats.component';
 import { AllProducatsComponent } from './components/all-producats/all-producats.component';
 import { ProducatsDetailsComponent } from './components/producats-details/producats-details.component';
 
@@ -8,7 +7,6 @@ import { ProducatsDetailsComponent } from './components/producats-details/produc
 
 @NgModule({
   declarations: [
-    ProducatsComponent,
     AllProducatsComponent,
     ProducatsDetailsComponent
   ],
