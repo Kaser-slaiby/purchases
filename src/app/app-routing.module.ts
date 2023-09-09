@@ -8,7 +8,7 @@ const routes: Routes = [
   ////add Routs for path
   {path:"products", component:AllProducatsComponent},
   {path:"deatils", component:ProducatsDetailsComponent},
-  {path:"carts", component:CartsComponent},
+  {path:"cart", component:CartsComponent},
   ///path for erorr
   {path:"**", redirectTo:"products", pathMatch:"full"}  
 ];
