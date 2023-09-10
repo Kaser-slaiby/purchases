@@ -1,3 +1,5 @@
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,8 +15,11 @@ import { SharedModule } from "./shared/shared.module";
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
+        // HttpClientModule,   
         AppRoutingModule,
-        SharedModule
+        SharedModule,
+        BrowserModule,
+        CommonModule
     ]
 })
 export class AppModule { }

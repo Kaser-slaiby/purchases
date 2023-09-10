@@ -16,9 +16,10 @@ export class AllProducatsComponent implements OnInit {
   }
 
   getProducts() {
-    this.service.getAllproducts().subscribe((res:any) => {
-      console.log(res)
-    })
-    }
+    this.service.getAllProducts().subscribe((res:any) => {
+    this.products = res 
+    // console.log(res)
+  })
+  }
 
 }

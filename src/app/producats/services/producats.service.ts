@@ -4,12 +4,13 @@ import { HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ProducatsService {
+export class ProducatsService { 
 
   constructor(private http:HttpClient) {}
 
-    getAllproducts() {
+    getAllProducts() {
       return this.http.get('https://fakestoreapi.com/products')
     }
    }
 
+ 
