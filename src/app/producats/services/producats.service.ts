@@ -15,6 +15,12 @@ export class ProducatsService {
     getAllCategories() {
       return this.http.get('https://fakestoreapi.com/products/categories')
     }
+
+    //////keyword for fillter
+    getProductsByCategories(keyword:string) {
+      return this.http.get('https://fakestoreapi.com/products/category/' + keyword)
+
+    }
    }
 
   
