@@ -32,4 +32,8 @@ export class AllProducatsComponent implements OnInit {
   })
   }
 
+  fillterCategory(event:any) {
+    let value = event.target.value;
+    console.log(value)
+  }
 }
