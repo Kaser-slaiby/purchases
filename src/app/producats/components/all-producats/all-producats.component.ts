@@ -9,15 +9,25 @@ import { ProducatsService } from '../../services/producats.service';
 export class AllProducatsComponent implements OnInit {
 
   products:any[] = []
+  categories: any [] = []
   constructor(private service:ProducatsService) {}
+  
 
   ngOnInit() :void {
     this.getProducts()
+    this.getCategories()
   }
 
   getProducts() {
     this.service.getAllProducts().subscribe((res:any) => {
     this.products = res 
+    // console.log(res)
+  })
+  }
+
+  getCategories() {
+    this.service.getAllCategories().subscribe((res:any) => {
+    this.categories = res 
     // console.log(res)
   })
   }
