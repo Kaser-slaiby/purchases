@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CartsComponent } from './carts/components/carts/carts.component';
 import { AllProducatsComponent } from './producats/components/all-producats/all-producats.component';
 import { ProducatsDetailsComponent } from './producats/components/producats-details/producats-details.component';
+import { SharedModule } from "./shared/shared.module";
 
 const routes: Routes = [
   ////add Routs for path
@@ -16,14 +17,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
-    CommonModule,
-    FormsModule
-  
-  ],
-  declarations: [
-    AllProducatsComponent
-  ],
-  exports: [RouterModule],
+    declarations: [
+        AllProducatsComponent
+    ],
+    exports: [RouterModule],
+    imports: [RouterModule.forRoot(routes),
+        CommonModule,
+        FormsModule, SharedModule]
 })
 export class AppRoutingModule { }
