@@ -34,8 +34,14 @@ export class AllProducatsComponent implements OnInit {
 ////////////////Start fun  for services getProductsByCategories
   fillterCategory(event:any) {
     let value = event.target.value;
-    this.getProductsCategories(value)
-    // console.log(value)
+    if(value == "All") {
+      this.getProducts()
+    }
+    else {
+      this.getProductsCategories(value)
+      // console.log(value)
+    }
+  
   }
   getProductsCategories(keyword:string) {
     this.service.getProductsByCategories(keyword).subscribe((res:any) => {
