@@ -25,6 +25,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
   //////for to see in app.module.ts with out import
   exports: [
     HeaderComponent,
+    SpinnerComponent
     // CommonModule,
     // RouterModule
   ],
