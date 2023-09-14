@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-select',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./select.component.scss']
 })
 export class SelectComponent {
+@Input()  title: string = ""
+@Input()  data: any [] = []
 
+  detectChanges(event:any) {
+
+}
 }

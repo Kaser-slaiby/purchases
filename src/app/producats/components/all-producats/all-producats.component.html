@@ -1,12 +1,6 @@
 <div class="box mt-5">
   <div class="my-2 w-25">
-    <label for="" class="my-1">Categories :</label>
-    <select class="form-control" (change)="fillterCategory($event)">
-      <option>All</option>
-      <option value="{{ option }}" *ngFor="let option of categories">
-        {{ option }}
-      </option>
-    </select>
+    <app-select [data]="categories" [title]="'Categories'"></app-select>
   </div>
   <!-- ///////// ! => if false -->
   <div class="row" *ngIf="!loading">

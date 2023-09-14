@@ -27,7 +27,8 @@ import { SelectComponent } from './components/select/select.component';
   //////for to see in app.module.ts with out import
   exports: [
     HeaderComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    SelectComponent
     // CommonModule,
     // RouterModule
   ],
