@@ -1,6 +1,6 @@
 <div class="box mt-5">
   <div class="my-2 w-25">
-    <app-select [data]="categories" [title]="'Categories'"></app-select>
+    <app-select [data]="categories" [title]="'Categories'" (selectedValue)="fillterCategory($event)"></app-select>
   </div>
   <!-- ///////// ! => if false -->
   <div class="row" *ngIf="!loading">

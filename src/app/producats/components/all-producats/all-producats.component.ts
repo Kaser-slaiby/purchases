@@ -57,4 +57,5 @@ export class AllProducatsComponent implements OnInit {
   }
 ////////////////End fun  for services getProductsByCategories
 
+
 }
