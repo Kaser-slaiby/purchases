@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ProducatsDetailsComponent } from './components/producats-details/producats-details.component';
 // import { BrowserModule } from '@angular/platform-browser';
  import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from './components/product/product.component';
 
 
 
 @NgModule({
   declarations: [
     // AllProducatsComponent,
-    ProducatsDetailsComponent
+    ProducatsDetailsComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,
