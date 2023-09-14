@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { SelectComponent } from './components/select/select.component';
 // import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -12,7 +13,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 @NgModule({
   declarations: [
     HeaderComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,
